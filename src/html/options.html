@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MediaExtractor | Settings</title>
+    <link rel="stylesheet" href="/css/options.css">
+</head>
+
+<body>
+    <header>MEDIA SOURCE EXTRACTOR</header>
+    <main>
+        <div class="check">
+            <input type="checkbox" id="ignore" />
+            <label class="label-inline" for="ignore">ignore whitelist</label><br>
+        </div>
+        <div class="check">
+            <input type="checkbox" id="closetab" />
+            <label class="label-inline" for="closetab">close tab</label><br>
+        </div>
+        <div class="check">
+            <input type="checkbox" id="disable" />
+            <label class="label-inline" for="disable">disable</label><br>
+        </div>
+        <div class="list">
+            <label for="whitelist">domain whitelist</label>
+            <textarea id="whitelist" spellcheck="false" placeholder="videosite1.com&#x0a;videosite2.com"></textarea>
+        </div>
+        <div class="list">
+            <label for="extensions">media extension</label>
+            <textarea spellcheck="false" id="extensions" placeholder="mp4&#x0a;avi&#x0a;mkv&#x0a;m3u8"></textarea>
+        </div>
+    </main>
+    <script src="/js/settings.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/options.js"></script>
+</body>
+
+</html>

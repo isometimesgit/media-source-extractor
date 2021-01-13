@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+    "name": "Media Source Extractor",
+    "description": "Copy media source from embedded players and download links to the clipboard.",
+    "version": "1.0.0",
+    "icons": {
+        "128": "/assets/icon-128.png"
+    },
+    "background": {
+        "scripts": [
+            "/js/settings.js",
+            "/js/util.js",
+            "/js/main.js"
+        ]
+    },
+    "browser_action": {
+        "browser_style": true,
+        "default_popup": "/html/options.html",
+        "default_icon": {
+            "128": "/assets/icon-128.png"
+        }
+    },
+    "options_ui": {
+        "page": "/html/options.html",
+        "open_in_tab": true
+    },
+    "permissions": [
+        "<all_urls>",
+        "clipboardWrite",
+        "webRequest",
+        "webRequestBlocking",
+        "tabs",
+        "storage"
+    ]
+}
